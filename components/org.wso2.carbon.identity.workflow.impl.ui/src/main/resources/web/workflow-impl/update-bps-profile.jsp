@@ -116,7 +116,7 @@
                         <td width="30%"><fmt:message key='workflow.bps.profile.name'/></td>
                         <td><input readonly type="text" name="<%=WorkflowUIConstants.PARAM_BPS_PROFILE_NAME%>"
                                    label="<fmt:message key='workflow.bps.profile.name'/>" maxlength="45"
-                                   value='<%=Encode.forHtmlContent(bpsProfile.getProfileName())%>'  style="width:30%"
+                                   value='<%=Encode.forHtml(bpsProfile.getProfileName())%>'  style="width:30%"
                                    class="text-box-big"/></td>
                     </tr>
                     </tbody>
@@ -132,7 +132,7 @@
                         <td width="30%"><fmt:message key='workflow.bps.profile.manager.host'/></td>
                         <td>
                             <input type="text" name="<%=WorkflowUIConstants.PARAM_BPS_MANAGER_HOST%>"
-                                   value='<%=Encode.forHtmlContent(bpsProfile.getManagerHostURL())%>' maxlength="255"
+                                   value='<%=Encode.forHtml(bpsProfile.getManagerHostURL())%>' maxlength="255"
                                    black-list-patterns="^(\s*)$"
                                    label="<fmt:message key='workflow.bps.profile.manager.host'/>"
                                    style="width:50%" class="text-box-big"/>
@@ -143,7 +143,7 @@
                     <tr>
                         <td width="30%"><fmt:message key='workflow.bps.profile.worker.host'/></td>
                         <td><input type="text" name="<%=WorkflowUIConstants.PARAM_BPS_WORKER_HOST%>"
-                                   value='<%=Encode.forHtmlContent(bpsProfile.getWorkerHostURL())%>' maxlength="255"
+                                   value='<%=Encode.forHtml(bpsProfile.getWorkerHostURL())%>' maxlength="255"
                                    black-list-patterns="^(\s*)$"
                                    label="<fmt:message key='workflow.bps.profile.worker.host'/>"
                                    style="width:60%" class="text-box-big"/>
@@ -155,7 +155,7 @@
                     <tr>
                         <td width="30%"><fmt:message key='workflow.bps.profile.auth.user'/></td>
                         <td><input type="text" name="<%=WorkflowUIConstants.PARAM_BPS_AUTH_USER%>"
-                                   value='<%=Encode.forHtmlContent(bpsProfile.getUsername())%>' maxlength="45"
+                                   value='<%=Encode.forHtml(bpsProfile.getUsername())%>' maxlength="45"
                                    black-list-patterns="^(\s*)$"
                                    label="<fmt:message key='workflow.bps.profile.auth.user'/>"
                                    style="width:60%" class="text-box-big"/></td>
